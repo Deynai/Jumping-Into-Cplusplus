@@ -1,3 +1,3 @@
-# Stepping-Into-Cplusplus
+# Jumping-Into-Cplusplus
 
 Questions from a book by Alex Allain
