@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "13.3 Pointers", "13.2 Point
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "13.4 Pointers", "13.4 Pointers\13.4 Pointers.vcxproj", "{E7E147DF-3D22-4072-9D05-2ABB969C371E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "13.5 Pointers", "13.5 Pointers\13.5 Pointers.vcxproj", "{1665DB5B-3962-4E9E-A8BB-FABC0E61AA5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{E7E147DF-3D22-4072-9D05-2ABB969C371E}.Release|x64.Build.0 = Release|x64
 		{E7E147DF-3D22-4072-9D05-2ABB969C371E}.Release|x86.ActiveCfg = Release|Win32
 		{E7E147DF-3D22-4072-9D05-2ABB969C371E}.Release|x86.Build.0 = Release|Win32
+		{1665DB5B-3962-4E9E-A8BB-FABC0E61AA5C}.Debug|x64.ActiveCfg = Debug|x64
+		{1665DB5B-3962-4E9E-A8BB-FABC0E61AA5C}.Debug|x64.Build.0 = Debug|x64
+		{1665DB5B-3962-4E9E-A8BB-FABC0E61AA5C}.Debug|x86.ActiveCfg = Debug|Win32
+		{1665DB5B-3962-4E9E-A8BB-FABC0E61AA5C}.Debug|x86.Build.0 = Debug|Win32
+		{1665DB5B-3962-4E9E-A8BB-FABC0E61AA5C}.Release|x64.ActiveCfg = Release|x64
+		{1665DB5B-3962-4E9E-A8BB-FABC0E61AA5C}.Release|x64.Build.0 = Release|x64
+		{1665DB5B-3962-4E9E-A8BB-FABC0E61AA5C}.Release|x86.ActiveCfg = Release|Win32
+		{1665DB5B-3962-4E9E-A8BB-FABC0E61AA5C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 
 int products(int* x, int y)
 {
