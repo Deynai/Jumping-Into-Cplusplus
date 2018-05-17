@@ -1,5 +1,10 @@
 #include <iostream>
 
+/*
+5. Write a program that compares the memory addresses of two different variables on the stack and
+prints out the order of the variables by numerical order of their addresses.
+*/
+
 int main()
 {
 	int x;

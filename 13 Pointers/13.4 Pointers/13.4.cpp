@@ -1,5 +1,12 @@
 #include <iostream>
 
+/* 
+4. Write a function that takes two input arguments and provides two separate results to the caller, one
+that is the result of multiplying the two arguments, the other the result of adding them. Since you can
+directly return only one value from a function, you'll need the second value to be returned through a
+pointer or reference parameter.
+*/
+
 int products(int* x, int y)
 {
 	*x += y; // set the pointer variable to the sum of the two numbers
