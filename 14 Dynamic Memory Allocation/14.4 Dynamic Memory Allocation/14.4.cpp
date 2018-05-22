@@ -65,7 +65,7 @@ void sort_list(contact *p_list)
 
 void print_list(contact *p_list)
 {
-	std::cout << "\n\n\tName\tDays since last chat";
+	std::cout << "\n\tName\tDays since last chat";
 
 	for (size_t i = 1; i < p_list[0].time; i++)
 	{
@@ -86,6 +86,11 @@ contact* update_friend(contact *p_list)
 	std::cin >> temp_contact.name;
 	std::cout << "\nEnter days since last chat:\n";
 	std::cin >> temp_contact.time;
+	while (temp_contact.time < 0)
+	{
+		std::cout << "\nPlease enter non-negative time:\n";
+		std::cin >> temp_contact.time;
+	}
 
 	while (true)
 	{
@@ -110,7 +115,7 @@ void menu(contact *p_list)
 
 	while (exit == 0)
 	{
-		std::cout << "\nSelect option: \n\t1. Update Friend \n\t2. Print List of Friends \n\t3. Exit.\n";
+		std::cout << "\nlect option: \n\t1. Update Friend \n\t2. Print List of Friends \n\t3. Exit.\n";
 		std::cin >> menu_option;
 		switch (menu_option)
 		{
