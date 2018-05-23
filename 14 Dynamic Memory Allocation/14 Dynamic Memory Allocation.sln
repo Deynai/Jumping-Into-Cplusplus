@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "14.3 Dynamic Memory Allocat
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "14.4 Dynamic Memory Allocation", "14.4 Dynamic Memory Allocation\14.4 Dynamic Memory Allocation.vcxproj", "{761752E6-83F6-4A1E-8BD7-3538F2E3C22B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "14.5 Dynamic Memory Allocation", "14.5 Dynamic Memory Allocation\14.5 Dynamic Memory Allocation.vcxproj", "{398367D5-DED6-450D-8A55-CE5882BA634C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{761752E6-83F6-4A1E-8BD7-3538F2E3C22B}.Release|x64.Build.0 = Release|x64
 		{761752E6-83F6-4A1E-8BD7-3538F2E3C22B}.Release|x86.ActiveCfg = Release|Win32
 		{761752E6-83F6-4A1E-8BD7-3538F2E3C22B}.Release|x86.Build.0 = Release|Win32
+		{398367D5-DED6-450D-8A55-CE5882BA634C}.Debug|x64.ActiveCfg = Debug|x64
+		{398367D5-DED6-450D-8A55-CE5882BA634C}.Debug|x64.Build.0 = Debug|x64
+		{398367D5-DED6-450D-8A55-CE5882BA634C}.Debug|x86.ActiveCfg = Debug|Win32
+		{398367D5-DED6-450D-8A55-CE5882BA634C}.Debug|x86.Build.0 = Debug|Win32
+		{398367D5-DED6-450D-8A55-CE5882BA634C}.Release|x64.ActiveCfg = Release|x64
+		{398367D5-DED6-450D-8A55-CE5882BA634C}.Release|x64.Build.0 = Release|x64
+		{398367D5-DED6-450D-8A55-CE5882BA634C}.Release|x86.ActiveCfg = Release|Win32
+		{398367D5-DED6-450D-8A55-CE5882BA634C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

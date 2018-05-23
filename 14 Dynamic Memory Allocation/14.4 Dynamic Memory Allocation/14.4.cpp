@@ -20,20 +20,20 @@ contact* increase_size(contact *p_list)
 	int size = p_list[0].time;
 	contact *p_list_new = new contact[p_list[0].time * 2];
 	p_list_new[0].name = "Size";
-	p_list_new[0].time = p_list[0].time * 2;
+	p_list_new[0].time = p_list[0].time * 2; // update size information in pointer
 
 	for (size_t i = 1; i < p_list[0].time; i++)
 	{
-		p_list_new[i] = p_list[i];
+		p_list_new[i] = p_list[i]; // copy values in old array to the new one
 	}
 	for (size_t i = p_list[0].time; i < p_list[0].time * 2; i++)
 	{
 		p_list_new[i].name = "0";
-		p_list_new[i].time = 0;
+		p_list_new[i].time = 0; // initialise remaining values in the new array
 	}
 
 	delete[] p_list;
-	p_list = NULL;
+	p_list = NULL; // delete old array and then update p_list to be the new one
 	return p_list_new;
 }
 
@@ -141,7 +141,7 @@ int main()
 {
 	contact *p_list = new contact[2];
 	p_list[0].name = "Size";
-	p_list[0].time = 2;
+	p_list[0].time = 2; // store information on the size of the pointer in the first entry
 	p_list[1].name = "0";
 	p_list[1].time = 0;
 
