@@ -115,7 +115,7 @@ void menu(contact *p_list)
 
 	while (exit == 0)
 	{
-		std::cout << "\nlect option: \n\t1. Update Friend \n\t2. Print List of Friends \n\t3. Exit.\n";
+		std::cout << "\nSelect option: \n\t1. Update Friend \n\t2. Print List of Friends \n\t3. Exit.\n";
 		std::cin >> menu_option;
 		switch (menu_option)
 		{
