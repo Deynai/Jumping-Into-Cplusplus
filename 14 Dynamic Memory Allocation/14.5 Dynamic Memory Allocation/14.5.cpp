@@ -1,5 +1,11 @@
 #include <iostream>
 
+/*
+5. Write a two-player game of "connect 4"31 where the user can set the width and height of the
+board and each player gets a turn to drop a token into the slot. Display the board using + for one
+side, x for the other, and _ to indicate blank spaces.
+*/
+
 int x = 4;
 int y = 4;
 
