@@ -192,7 +192,7 @@ void print_maze(mazecell **pp_board, int x, int y)
 {
 	// create an exit in south east corner
 	pp_board[x - 2][y - 2].s = 0;
-	std::cout << "\n\n  ";
+	std::cout << "\n  ";
 
 	// top border, with entrance in north west
 	for (size_t i = 2; i < x-1; i++)
