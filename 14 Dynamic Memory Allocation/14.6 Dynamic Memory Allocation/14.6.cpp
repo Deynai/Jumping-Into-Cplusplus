@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <time.h>
 
 struct mazecell
 {
@@ -232,6 +233,7 @@ int main()
 	int x = 1;
 	int y = 1;
 	select_size(x, y);
+	srand(time(NULL));
 
 	mazecell **pp_board = new mazecell*[x];
 	for (size_t i = 0; i < x; i++)
