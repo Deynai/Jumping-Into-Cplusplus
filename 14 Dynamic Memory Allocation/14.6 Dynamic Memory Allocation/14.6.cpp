@@ -3,10 +3,10 @@
 
 struct mazecell
 {
-	bool visited;
-	bool s;
-	bool e;
-	int last;
+	bool visited; // has this cell been visited before?
+	bool s; // is there a south wall?
+	bool e; // is there an east wall?
+	int last; // which direction did we enter this cell from?
 };
 
 struct location
@@ -60,6 +60,7 @@ int pick_direction(mazecell **pp_board, location loc)
 	bool valid_dir[4];
 	int pick_dir;
 	int sum_valid = 0;
+	// create temporary array to store whether a direction is valid
 	valid_dir[0] = !pp_board[loc.x][loc.y - 1].visited;
 	valid_dir[1] = !pp_board[loc.x][loc.y + 1].visited;
 	valid_dir[2] = !pp_board[loc.x - 1][loc.y].visited;
@@ -77,10 +78,12 @@ int pick_direction(mazecell **pp_board, location loc)
 		return -1;
 	}
 
+	// pick a random number from 0 to total number of valid directions
 	pick_dir = rand() % sum_valid;
 
 	int counter = 0;
 
+	// associate the random pick to a specific direction and return it to the caller
 	for (size_t i = 0; i < 4; i++)
 	{
 		if (pick_dir == counter && valid_dir[i] == 1)
@@ -100,6 +103,11 @@ bool move_direction(mazecell **pp_board, location &loc, int dir)
 {
 	switch (dir)
 	{
+		// remove wall in direction of new cell
+		// change location to new cell
+		// change visited to true on new cell
+		// define direction of previous cell
+
 	case 0: // go north
 		pp_board[loc.x][loc.y - 1].s = 0;
 		loc.y -= 1;
@@ -136,6 +144,7 @@ bool move_direction(mazecell **pp_board, location &loc, int dir)
 
 bool move_back(mazecell **pp_board, location &loc)
 {
+	// .last stores the direction of the previous cell
 	switch (pp_board[loc.x][loc.y].last)
 	{
 	case 1: loc.y += 1;
@@ -159,22 +168,17 @@ bool move_back(mazecell **pp_board, location &loc)
 void generate_maze(mazecell **pp_board, int x, int y)
 {
 	bool maze_finished = 0;
+
+	// initalise a location to keep track of where we are in the maze
 	location loc;
 	loc.x = 1, loc.y = 1;
-	pp_board[1][1].visited = 1;
+	pp_board[1][1].visited = 1; 
 
 	while (maze_finished == 0)
 	{
 		
-		// find valid movements
-		// pick valid movement randomly
+		// find and pick a valid moment at random (uniform)
 		int dir = pick_direction(pp_board, loc);
-
-
-		// remove wall in direction of new cell
-		// change location to new cell
-		// change visited to true on new cell
-		// define last cell
 
 		// if no valid movement, move back to previous cell, then repeat
 		if (move_direction(pp_board, loc, dir) == 0)
@@ -186,13 +190,17 @@ void generate_maze(mazecell **pp_board, int x, int y)
 
 void print_maze(mazecell **pp_board, int x, int y)
 {
+	// create an exit in south east corner
 	pp_board[x - 2][y - 2].s = 0;
 	std::cout << "\n\n  ";
+
+	// top border, with entrance in north west
 	for (size_t i = 2; i < x-1; i++)
 	{
 		std::cout << " _";
 	}
 
+	// print maze based on each cells .s (south) and .e (east) facing walls
 	for (size_t j = 1; j < y-1; j++)
 	{
 		std::cout << "\n|";
@@ -246,6 +254,7 @@ int main()
 
 	delete[] pp_board;
 	pp_board = NULL;
+	//-------
 
 	int exitprogram;
 	std::cout << "\n\nExiting.";
