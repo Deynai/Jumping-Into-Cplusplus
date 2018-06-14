@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "16.1 Pow function", "16.1 R
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "16.2 Print Array in Reverse", "16.2 Print Array in Reverse\16.2 Print Array in Reverse.vcxproj", "{7FE22DE2-E8DA-4087-9BD8-1F40C87ADADD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "16.3 Recursion vs Iteration Linked Lists", "16.3 Recursion vs Iteration Linked Lists\16.3 Recursion vs Iteration Linked Lists.vcxproj", "{D9CD9BC0-587E-4261-9443-53E01BF45F1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{7FE22DE2-E8DA-4087-9BD8-1F40C87ADADD}.Release|x64.Build.0 = Release|x64
 		{7FE22DE2-E8DA-4087-9BD8-1F40C87ADADD}.Release|x86.ActiveCfg = Release|Win32
 		{7FE22DE2-E8DA-4087-9BD8-1F40C87ADADD}.Release|x86.Build.0 = Release|Win32
+		{D9CD9BC0-587E-4261-9443-53E01BF45F1E}.Debug|x64.ActiveCfg = Debug|x64
+		{D9CD9BC0-587E-4261-9443-53E01BF45F1E}.Debug|x64.Build.0 = Debug|x64
+		{D9CD9BC0-587E-4261-9443-53E01BF45F1E}.Debug|x86.ActiveCfg = Debug|Win32
+		{D9CD9BC0-587E-4261-9443-53E01BF45F1E}.Debug|x86.Build.0 = Debug|Win32
+		{D9CD9BC0-587E-4261-9443-53E01BF45F1E}.Release|x64.ActiveCfg = Release|x64
+		{D9CD9BC0-587E-4261-9443-53E01BF45F1E}.Release|x64.Build.0 = Release|x64
+		{D9CD9BC0-587E-4261-9443-53E01BF45F1E}.Release|x86.ActiveCfg = Release|Win32
+		{D9CD9BC0-587E-4261-9443-53E01BF45F1E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
