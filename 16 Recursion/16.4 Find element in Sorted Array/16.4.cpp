@@ -3,7 +3,7 @@
 /*
 Write a recursive function that takes a sorted array and a target element and finds that element
 in the array (returning the index, or -1 if the element isn’t in the array). How fast can you make
-this search? Can you do better than looking having to look at every element?
+this search? Can you do better than having to look at every element?
 */
 
 int splitArray(int list[], int element, int low, int high)
@@ -20,10 +20,12 @@ int splitArray(int list[], int element, int low, int high)
 		}
 		else
 		{
-			return -1;
+			return -1; // if the element isn't in the list, return -1
 		}
 	}
 
+	// this splitting algo should find the element in [log x / log 2] steps, where x is the size of the list.
+	// this utilises ints truncating by default: 6.5 -> 6 (little bit dodgy maybe)
 	if (list[(high+low)/2] <= element)
 	{
 		splitArray(list, element, (high + low) / 2, high); // midpoint = new lower bound, same upper
@@ -36,22 +38,17 @@ int splitArray(int list[], int element, int low, int high)
 
 int main()
 {
-	int lower = 0;
-	int upper = 299;
-	int element = 0;
-	int index = -1;
 	int list[300];
 	for (size_t i = 0; i < 300; i++)
 	{
 		list[i] = (i * 3) + (i*i) - 40; // initialise with arbitrary sorted values
 	}
-	
+
+	int element = 0;
 	std::cout << "Find element: ";
 	std::cin >> element;
 
-	index = splitArray(list, element, 0, sizeof(list)/sizeof(*list));
-
-	std::cout << "\n\nIndex is: " << index << "\n";
+	std::cout << "\n\nIndex is: " << splitArray(list, element, 0, sizeof(list) / sizeof(*list)) << "\n";
 
 	int exitprogram;
 	std::cout << "\nExiting.";
