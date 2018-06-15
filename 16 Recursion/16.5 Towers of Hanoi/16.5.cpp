@@ -6,6 +6,7 @@ struct disk
 	disk* p_next;
 };
 
+// initiates n ordered disks on stick 1;
 disk* initStick(disk* stick, int n)
 {
 	for (size_t i = 0; i < n; i++)
@@ -18,13 +19,14 @@ disk* initStick(disk* stick, int n)
 	return stick;
 }
 
+// display current state of sticks, debug
 void displaySticks(disk** stick)
 {
 	disk* currentDisk;
 	for (size_t i = 0; i < 3; i++)
 	{
 		currentDisk = stick[i];
-		std::cout << "Stick " << i << ":\n";
+		std::cout << "Stick " << i+1 << ":\n";
 		while (currentDisk != NULL)
 		{
 			std::cout << currentDisk->size << "\n";
@@ -32,6 +34,11 @@ void displaySticks(disk** stick)
 		}
 	}
 	return;
+}
+
+disk* moveDisk(disk** stick, int source, int target)
+{
+	
 }
 
 int main()
