@@ -6,55 +6,45 @@ struct disk
 	disk* p_next;
 };
 
-disk* initStickA(disk* stickA, int n)
+disk* initStick(disk* stick, int n)
 {
 	for (size_t i = 0; i < n; i++)
 	{
 		disk* newDisk = new disk;
 		newDisk->size = n - i;
-		newDisk->p_next = stickA;
-		stickA = newDisk;
+		newDisk->p_next = stick;
+		stick = newDisk;
 	}
-	return stickA;
+	return stick;
 }
 
-void displaySticks(disk* stickA = NULL, disk* stickB = NULL, disk* stickC = NULL)
+void displaySticks(disk** stick)
 {
-	disk* currentDisk = stickA;
-	std::cout << "Stick A:\n";
-	while (currentDisk != NULL)
+	disk* currentDisk;
+	for (size_t i = 0; i < 3; i++)
 	{
-		std::cout << currentDisk->size << "\n";
-		currentDisk = currentDisk->p_next;
-	}
-
-	std::cout << "Stick B:\n";
-	currentDisk = stickB;
-	while (currentDisk != NULL)
-	{
-		std::cout << currentDisk->size << "\n";
-		currentDisk = currentDisk->p_next;
-	}
-
-	std::cout << "Stick C:\n";
-	currentDisk = stickC;
-	while (currentDisk != NULL)
-	{
-		std::cout << currentDisk->size << "\n";
-		currentDisk = currentDisk->p_next;
+		currentDisk = stick[i];
+		std::cout << "Stick " << i << ":\n";
+		while (currentDisk != NULL)
+		{
+			std::cout << currentDisk->size << "\n";
+			currentDisk = currentDisk->p_next;
+		}
 	}
 	return;
 }
 
 int main()
 {
-	disk* stickA = NULL;
-	disk* stickB = NULL;
-	disk* stickC = NULL;
+	disk** stick = new disk*[3];
+	for (size_t i = 0; i < 3; i++)
+	{
+		stick[i] = NULL;
+	}
 	int n = 5; // number of disks
-	stickA = initStickA(stickA, n);
+	stick[0] = initStick(stick[0], n);
 
-	displaySticks(stickA);
+	displaySticks(stick);
 
 	int exitprogram;
 	std::cout << "\nExiting.";
