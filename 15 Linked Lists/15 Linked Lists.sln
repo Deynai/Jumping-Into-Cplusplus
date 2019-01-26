@@ -9,7 +9,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "15.2 Linked Lists", "15.2\1
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "15.3 Linked Lists", "15.3 Linked Lists\15.3 Linked Lists.vcxproj", "{2F1807DF-BA49-4BE3-B855-8AFC7E29DDFF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "15.4 Linked Lists", "15.4 Linked Lists\15.4 Linked Lists.vcxproj", "{9DDBC6C1-C854-4E91-9285-FEB52572BBFF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "15.4.1 Linked Lists", "15.4 Linked Lists\15.4 Linked Lists.vcxproj", "{9DDBC6C1-C854-4E91-9285-FEB52572BBFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
