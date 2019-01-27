@@ -85,11 +85,10 @@ int main()
 	// print in descending order
 	print_tree_sorted_invert(p_tree);
 
+	wipe_tree(p_tree);
 
 	int exitprogram;
 	std::cout << "\nExiting.";
 	std::cin >> exitprogram;
 	return 0;
 }
-
-
