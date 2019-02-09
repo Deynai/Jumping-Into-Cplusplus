@@ -65,12 +65,16 @@ node* delete_node(node* p_tree, int number)
 		// case 2: one child
 		if (p_tree->left == NULL && p_tree->right != NULL)
 		{
-			return p_tree->right;
+			node* p_tree_right = p_tree->right;
+			delete p_tree;
+			return p_tree_right;
 		}
 
 		if (p_tree->left != NULL && p_tree->right == NULL)
 		{
-			return p_tree->left;
+			node* p_tree_left = p_tree->left;
+			delete p_tree;
+			return p_tree_left;
 		}
 		// case 3: two children
 
