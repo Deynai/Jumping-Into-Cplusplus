@@ -12,7 +12,7 @@ node* CreateTree(node* p_tree, int size)
 	return p_tree;
 }
 
-void print_tree(node* p_tree, int level)
+void printTree(node* p_tree, int level)
 {
 	level += 1;
 
@@ -29,22 +29,22 @@ void print_tree(node* p_tree, int level)
 
 	std::cout << "\\-- " << p_tree->value << "\n";
 
-	print_tree(p_tree->left, level);
-	print_tree(p_tree->right, level);
+	printTree(p_tree->left, level);
+	printTree(p_tree->right, level);
 
 	return;
 }
 
-void print_tree_sorted(node* p_tree)
+void printTreeSorted(node* p_tree)
 {
 	if (p_tree == NULL)
 	{
 		return;
 	}
 
-	print_tree_sorted(p_tree->left);
+	printTreeSorted(p_tree->left);
 	std::cout << p_tree->value << "\n";
-	print_tree_sorted(p_tree->right);
+	printTreeSorted(p_tree->right);
 
 	return;
 }
@@ -75,17 +75,17 @@ int main()
 	int tree_level = 0;
 
 	// print tree positioning
-	print_tree(p_tree, tree_level);
+	printTree(p_tree, tree_level);
 
 	// print in ascending order
-	print_tree_sorted(p_tree);
+	printTreeSorted(p_tree);
 
 	std::cout << "\n\n";
 
 	// print in descending order
 	print_tree_sorted_invert(p_tree);
 
-	wipe_tree(p_tree);
+	deleteTree(p_tree);
 
 	int exitprogram;
 	std::cout << "\nExiting.";

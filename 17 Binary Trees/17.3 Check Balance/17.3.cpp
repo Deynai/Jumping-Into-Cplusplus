@@ -13,7 +13,7 @@ node* create_tree(node* p_tree, int size)
 	return p_tree;
 }
 
-void find_last_level(node* p_tree, int current_level, int &max_level)
+void findLastLevel(node* p_tree, int current_level, int &max_level)
 {
 	// base case
 	if (p_tree == NULL)
@@ -28,11 +28,11 @@ void find_last_level(node* p_tree, int current_level, int &max_level)
 	}
 
 	// continue digging
-	find_last_level(p_tree->left, current_level + 1, max_level);
-	find_last_level(p_tree->right, current_level + 1, max_level);
+	findLastLevel(p_tree->left, current_level + 1, max_level);
+	findLastLevel(p_tree->right, current_level + 1, max_level);
 }
 
-void check_balance(node* p_tree, int level, bool &is_balanced)
+void checkBalance(node* p_tree, int level, bool &is_balanced)
 {
 	// base case
 	if (p_tree == NULL)
@@ -45,8 +45,8 @@ void check_balance(node* p_tree, int level, bool &is_balanced)
 	int max_level_right = level;
 
 	// find how deep our left and right branches go, and hand our max_level back.
-	find_last_level(p_tree->left, level + 1, max_level_left);
-	find_last_level(p_tree->right, level + 1, max_level_right);
+	findLastLevel(p_tree->left, level + 1, max_level_left);
+	findLastLevel(p_tree->right, level + 1, max_level_right);
 
 	// find the difference between our left and right branches, if it's 2 or more then the tree is imbalanced
 	if (abs(max_level_left - max_level_right) >= 2)
@@ -57,8 +57,8 @@ void check_balance(node* p_tree, int level, bool &is_balanced)
 	}
 
 	// recurse by checking the balance starting from the left and right nodes.
-	check_balance(p_tree->left, level + 1, is_balanced);
-	check_balance(p_tree->right, level + 1, is_balanced);
+	checkBalance(p_tree->left, level + 1, is_balanced);
+	checkBalance(p_tree->right, level + 1, is_balanced);
 
 	return;
 }
@@ -77,7 +77,7 @@ int main()
 		bool is_balanced = 1;
 
 		p_tree = create_tree(p_tree, size);
-		check_balance(p_tree, 0, is_balanced);
+		checkBalance(p_tree, 0, is_balanced);
 
 		switch (is_balanced)
 		{

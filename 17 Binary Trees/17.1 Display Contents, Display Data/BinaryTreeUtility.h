@@ -46,7 +46,7 @@ node* find_least(node* p_tree, int &smallest)
 	return p_tree;
 }
 
-node* delete_node(node* p_tree, int number)
+node* deleteNode(node* p_tree, int number)
 {
 	if (p_tree == NULL)
 	{
@@ -87,27 +87,27 @@ node* delete_node(node* p_tree, int number)
 
 	if (p_tree->value > number)
 	{
-		p_tree->left = delete_node(p_tree->left, number);
+		p_tree->left = deleteNode(p_tree->left, number);
 	}
 	else
 	{
-		p_tree->right = delete_node(p_tree->right, number);
+		p_tree->right = deleteNode(p_tree->right, number);
 	}
 	return p_tree;
 }
 
-void wipe_tree(node* p_tree)
+void deleteTree(node* p_tree)
 {
 	if (p_tree != NULL)
 	{
-		wipe_tree(p_tree->left);
-		wipe_tree(p_tree->right);
+		deleteTree(p_tree->left);
+		deleteTree(p_tree->right);
 		delete p_tree;
 	}
 	return;
 }
 
-node* search_tree(node* p_tree, int number)
+node* searchTree(node* p_tree, int number)
 {
 	if (p_tree == NULL)
 	{
@@ -121,12 +121,12 @@ node* search_tree(node* p_tree, int number)
 
 	if (p_tree->value > number)
 	{
-		p_tree = search_tree(p_tree->left, number);
+		p_tree = searchTree(p_tree->left, number);
 	}
 
 	else
 	{
-		p_tree = search_tree(p_tree->right, number);
+		p_tree = searchTree(p_tree->right, number);
 	}
 
 	return p_tree;

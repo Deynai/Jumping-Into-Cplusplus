@@ -11,7 +11,7 @@ node* create_tree(node* p_tree, int size)
 	return p_tree;
 }
 
-void count_nodes(node* p_tree, int &counter)
+void countNodes(node* p_tree, int &counter)
 {
 	if (p_tree == NULL)
 	{
@@ -19,8 +19,8 @@ void count_nodes(node* p_tree, int &counter)
 	}
 
 	counter += 1;
-	count_nodes(p_tree->left, counter);
-	count_nodes(p_tree->right, counter);
+	countNodes(p_tree->left, counter);
+	countNodes(p_tree->right, counter);
 	
 	return;
 }
@@ -33,7 +33,7 @@ int main()
 	int counter = 0;
 
 	p_tree = create_tree(p_tree, size);
-	count_nodes(p_tree, counter);
+	countNodes(p_tree, counter);
 
 	std::cout << "Number of nodes counter: " << counter << "\n";
 
