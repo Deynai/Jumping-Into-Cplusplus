@@ -66,7 +66,7 @@ void tictac::makeMove(int x, int y)
 	}
 
 	board[x-1][y-1] = piece;
-	this->updateStatus();
+	status = this->updateStatus();
 	return;
 }
 
