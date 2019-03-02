@@ -1,4 +1,5 @@
 #include "TicTac.h"
+#include <iostream>
 
 void tictac::init()
 {

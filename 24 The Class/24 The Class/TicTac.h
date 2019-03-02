@@ -1,8 +1,6 @@
 #ifndef tictac_RH
 #define tictac_RH
 
-#include <iostream>
-
 enum tictacPiece { EMPTY, X, O };
 enum playerTurn { PT_X, PT_O };
 enum result { X_WIN, O_WIN, DRAW, ACTIVE };
