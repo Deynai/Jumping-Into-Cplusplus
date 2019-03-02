@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "21.1 Add, Subtract, Multiply, Divide", "21.1 Add, Subtract, Multiply, Divide\21.1 Add, Subtract, Multiply, Divide.vcxproj", "{C96F2C71-6261-4F02-8F46-55CC7B01EB26}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "21.2 Functions in a separate .cpp", "21.2\21.2.vcxproj", "{9F8C9194-41CE-4482-BDA3-0B792419AF36}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "21.3 Splitting up Binary Trees", "21.3 Splitting up Binary Trees\21.3 Splitting up Binary Trees.vcxproj", "{E7405904-E86B-4C72-8D70-9DE41A332689}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "21.2 Functions in a separate .cpp", "21.2 Simple Calc\21.2.vcxproj", "{9F8C9194-41CE-4482-BDA3-0B792419AF36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,6 @@ Global
 		{C96F2C71-6261-4F02-8F46-55CC7B01EB26}.Release|x64.Build.0 = Release|x64
 		{C96F2C71-6261-4F02-8F46-55CC7B01EB26}.Release|x86.ActiveCfg = Release|Win32
 		{C96F2C71-6261-4F02-8F46-55CC7B01EB26}.Release|x86.Build.0 = Release|Win32
-		{9F8C9194-41CE-4482-BDA3-0B792419AF36}.Debug|x64.ActiveCfg = Debug|x64
-		{9F8C9194-41CE-4482-BDA3-0B792419AF36}.Debug|x64.Build.0 = Debug|x64
-		{9F8C9194-41CE-4482-BDA3-0B792419AF36}.Debug|x86.ActiveCfg = Debug|Win32
-		{9F8C9194-41CE-4482-BDA3-0B792419AF36}.Debug|x86.Build.0 = Debug|Win32
-		{9F8C9194-41CE-4482-BDA3-0B792419AF36}.Release|x64.ActiveCfg = Release|x64
-		{9F8C9194-41CE-4482-BDA3-0B792419AF36}.Release|x64.Build.0 = Release|x64
-		{9F8C9194-41CE-4482-BDA3-0B792419AF36}.Release|x86.ActiveCfg = Release|Win32
-		{9F8C9194-41CE-4482-BDA3-0B792419AF36}.Release|x86.Build.0 = Release|Win32
 		{E7405904-E86B-4C72-8D70-9DE41A332689}.Debug|x64.ActiveCfg = Debug|x64
 		{E7405904-E86B-4C72-8D70-9DE41A332689}.Debug|x64.Build.0 = Debug|x64
 		{E7405904-E86B-4C72-8D70-9DE41A332689}.Debug|x86.ActiveCfg = Debug|Win32
@@ -41,6 +33,14 @@ Global
 		{E7405904-E86B-4C72-8D70-9DE41A332689}.Release|x64.Build.0 = Release|x64
 		{E7405904-E86B-4C72-8D70-9DE41A332689}.Release|x86.ActiveCfg = Release|Win32
 		{E7405904-E86B-4C72-8D70-9DE41A332689}.Release|x86.Build.0 = Release|Win32
+		{9F8C9194-41CE-4482-BDA3-0B792419AF36}.Debug|x64.ActiveCfg = Debug|x64
+		{9F8C9194-41CE-4482-BDA3-0B792419AF36}.Debug|x64.Build.0 = Debug|x64
+		{9F8C9194-41CE-4482-BDA3-0B792419AF36}.Debug|x86.ActiveCfg = Debug|Win32
+		{9F8C9194-41CE-4482-BDA3-0B792419AF36}.Debug|x86.Build.0 = Debug|Win32
+		{9F8C9194-41CE-4482-BDA3-0B792419AF36}.Release|x64.ActiveCfg = Release|x64
+		{9F8C9194-41CE-4482-BDA3-0B792419AF36}.Release|x64.Build.0 = Release|x64
+		{9F8C9194-41CE-4482-BDA3-0B792419AF36}.Release|x86.ActiveCfg = Release|Win32
+		{9F8C9194-41CE-4482-BDA3-0B792419AF36}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,10 +5,10 @@ int main()
 {
 	// arbitrary code to test and debug the constructors, methods, etc of VectorOfInt.
 
-	vectorOfInt vecA(10);
+	rowan::vectorOfInt vecA(10);
 
 	std::cout << vecA.size();
-	
+
 	for (size_t i = 0; i < vecA.size(); i++)
 	{
 		vecA.set(i, i * 10);
@@ -25,8 +25,8 @@ int main()
 		std::cout << "\n" << vecA.get(i);
 	}
 
-	vectorOfInt vecB = vecA;
-	vectorOfInt vecC;
+	rowan::vectorOfInt vecB = vecA;
+	rowan::vectorOfInt vecC;
 	vecC = vecA;
 
 	std::cout << "\n\n";
