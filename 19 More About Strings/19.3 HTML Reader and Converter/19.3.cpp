@@ -99,7 +99,7 @@ void aParser(std::string &data)
 	for (int i = data.find(a, 0); i != std::string::npos; i = data.find(a, i + 1))
 	{
 		// assign linkurl
-		linkurl.assign(data, i + 9, data.find('>', i) - (i + 10));
+		linkurl.assign(data, i + 8, data.find('>', i) - (i + 8));
 		// assign linktext: starting at pos">", with length pos"<" - pos">" - 1
 		linktext.assign(data, data.find('>', i) + 1, data.find('<', i + 1) - data.find('>', i) - 1);
 		// now replace the whole thing from <a href=" ... to </a> with linktext (linkurl)
