@@ -1,0 +1,8 @@
+<html>
+The information between the <i>HEAD</i> and <i>/HEAD</i> tags is 
+not displayed. The information between the <b>BODY</b> and <b>/BODY</b> tags is displayed.-->
+<head>
+<title>Enter a title, displayed at the top of the window.</title>
+</head>
+<a href=https://www.dummies.com/moreofURL>site for big dummies</a>
+</html>
