@@ -1,0 +1,24 @@
+<address-book>
+<entry>
+<name>Alex Allain</name>
+<email>webmaster@cprogramming.com</email>
+</entry>
+<entry>
+<name>Joe Doe</name>
+<email>john@doe.com</email>
+</entry>
+<ul>
+<li>first unordered item</li>
+<li>second unordered item</li>
+</ul>
+<nl>
+<li>first numbered item</li>
+<li>second numbered item</li>
+<nl>
+<li>first child numbered item</li>
+<li>second child numbered item</li>
+</nl>
+<li>third numbered item</li>
+<li>fourth numbered item</li>
+</nl>
+</address-book>

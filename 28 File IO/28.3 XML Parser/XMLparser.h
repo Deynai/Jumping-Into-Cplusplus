@@ -12,9 +12,9 @@ class xmlparser
 public:
 	xmlparser(std::string filename);
 	~xmlparser();
-	xmlnode* nodeStart(xmlnode *p_parent);
-	void nodeTextRead(xmlnode *p_node);
-	bool nodeEnd();
+	xmlnode* nodeStart(xmlnode *p_parent); 
+	void nodeTextRead(xmlnode *p_node); // reads in text until the next tag
+	bool nodeEnd(); // returns true if findNext() is at an end node
 	bool eof(); // returns true if there are no more node declarations
 	void findNext(); // finds next node declaration, i.e updates i with next "<"
 	void displayTree(xmlnode* p_base, int level); // display tree, level helps keep track of child node depth to help with formatting

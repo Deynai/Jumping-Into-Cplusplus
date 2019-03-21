@@ -7,7 +7,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "28.1 Highscore Binary File"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "28.2 HTML Parser from File", "28.2 HTML Parser from File\28.2 HTML Parser from File.vcxproj", "{D48AC089-060C-4D09-940A-F4347C2B2605}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XML Parser", "XML Parser\XML Parser.vcxproj", "{7A104081-EBA7-4DBC-9396-6755F5CA73AA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "28.4 HTML with XML Parser", "28.4 HTML with XML Parser\28.4 HTML with XML Parser.vcxproj", "{CEA494CC-BF42-4059-8D2D-B69AD1F7EE2F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "28.3 XML Parser", "28.3 XML Parser\XML Parser.vcxproj", "{7A104081-EBA7-4DBC-9396-6755F5CA73AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,14 @@ Global
 		{D48AC089-060C-4D09-940A-F4347C2B2605}.Release|x64.Build.0 = Release|x64
 		{D48AC089-060C-4D09-940A-F4347C2B2605}.Release|x86.ActiveCfg = Release|Win32
 		{D48AC089-060C-4D09-940A-F4347C2B2605}.Release|x86.Build.0 = Release|Win32
+		{CEA494CC-BF42-4059-8D2D-B69AD1F7EE2F}.Debug|x64.ActiveCfg = Debug|x64
+		{CEA494CC-BF42-4059-8D2D-B69AD1F7EE2F}.Debug|x64.Build.0 = Debug|x64
+		{CEA494CC-BF42-4059-8D2D-B69AD1F7EE2F}.Debug|x86.ActiveCfg = Debug|Win32
+		{CEA494CC-BF42-4059-8D2D-B69AD1F7EE2F}.Debug|x86.Build.0 = Debug|Win32
+		{CEA494CC-BF42-4059-8D2D-B69AD1F7EE2F}.Release|x64.ActiveCfg = Release|x64
+		{CEA494CC-BF42-4059-8D2D-B69AD1F7EE2F}.Release|x64.Build.0 = Release|x64
+		{CEA494CC-BF42-4059-8D2D-B69AD1F7EE2F}.Release|x86.ActiveCfg = Release|Win32
+		{CEA494CC-BF42-4059-8D2D-B69AD1F7EE2F}.Release|x86.Build.0 = Release|Win32
 		{7A104081-EBA7-4DBC-9396-6755F5CA73AA}.Debug|x64.ActiveCfg = Debug|x64
 		{7A104081-EBA7-4DBC-9396-6755F5CA73AA}.Debug|x64.Build.0 = Debug|x64
 		{7A104081-EBA7-4DBC-9396-6755F5CA73AA}.Debug|x86.ActiveCfg = Debug|Win32

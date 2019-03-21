@@ -11,4 +11,5 @@ xmlnode::~xmlnode()
 	{
 		delete *itr;
 	}
+	_children.clear();
 }

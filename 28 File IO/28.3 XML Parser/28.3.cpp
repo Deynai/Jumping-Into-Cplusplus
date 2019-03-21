@@ -28,12 +28,14 @@ void XML(xmlnode *p_node, xmlparser &xml)
 }
 
 
+
+
 int main()
 {
 	xmlnode *p_base = new xmlnode;
 	p_base->_name = "Container Node";
 
-	xmlparser xmldoc_parser("file.txt");
+	xmlparser xmldoc_parser("file.xml");
 	XML(p_base, xmldoc_parser);
 
 	xmldoc_parser.displayTree(p_base, 0);
