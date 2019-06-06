@@ -23,7 +23,7 @@
     <ProjectGuid>{4B3DDA04-DE4E-46C4-9D8D-5F63E4D631AB}</ProjectGuid>
     <RootNamespace>My17BinaryTrees</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
-    <ProjectName>17.1 Binary Trees</ProjectName>
+    <ProjectName>17.1 Display Contents, Display Data</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

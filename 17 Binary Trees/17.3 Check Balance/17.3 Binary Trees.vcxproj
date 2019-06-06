@@ -23,6 +23,7 @@
     <ProjectGuid>{DB40AC2A-AB02-4D71-8972-9B2B5A971248}</ProjectGuid>
     <RootNamespace>My173BinaryTrees</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <ProjectName>17.3 Check Balance</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

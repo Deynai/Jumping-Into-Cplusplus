@@ -5,7 +5,11 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "29.1 Summing a Vector", "29.1 Summing a Vector\29.1 Summing a Vector.vcxproj", "{0A260831-764C-493F-AD17-9D012BAEFD96}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "29.2", "29.2\29.2.vcxproj", "{54ECD4D3-0BB7-4B89-BC9E-4F7D4F3549B2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "29.2 Refurbishing vectorOfInt", "29.2 Refurbishing vectorOfInt\29.2.vcxproj", "{54ECD4D3-0BB7-4B89-BC9E-4F7D4F3549B2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "29.3 Vector Search Method", "29.3 Vector Search Method\29.3 Vector Search Method.vcxproj", "{2CF99FEC-F410-4F39-B55C-6CD7FAE13C19}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "29.4 Sorting a Vector", "29.4 Sorting a Vector\29.4 Sorting a Vector.vcxproj", "{DC9FA0D2-028B-4BB3-9F4D-512A1447443D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,22 @@ Global
 		{54ECD4D3-0BB7-4B89-BC9E-4F7D4F3549B2}.Release|x64.Build.0 = Release|x64
 		{54ECD4D3-0BB7-4B89-BC9E-4F7D4F3549B2}.Release|x86.ActiveCfg = Release|Win32
 		{54ECD4D3-0BB7-4B89-BC9E-4F7D4F3549B2}.Release|x86.Build.0 = Release|Win32
+		{2CF99FEC-F410-4F39-B55C-6CD7FAE13C19}.Debug|x64.ActiveCfg = Debug|x64
+		{2CF99FEC-F410-4F39-B55C-6CD7FAE13C19}.Debug|x64.Build.0 = Debug|x64
+		{2CF99FEC-F410-4F39-B55C-6CD7FAE13C19}.Debug|x86.ActiveCfg = Debug|Win32
+		{2CF99FEC-F410-4F39-B55C-6CD7FAE13C19}.Debug|x86.Build.0 = Debug|Win32
+		{2CF99FEC-F410-4F39-B55C-6CD7FAE13C19}.Release|x64.ActiveCfg = Release|x64
+		{2CF99FEC-F410-4F39-B55C-6CD7FAE13C19}.Release|x64.Build.0 = Release|x64
+		{2CF99FEC-F410-4F39-B55C-6CD7FAE13C19}.Release|x86.ActiveCfg = Release|Win32
+		{2CF99FEC-F410-4F39-B55C-6CD7FAE13C19}.Release|x86.Build.0 = Release|Win32
+		{DC9FA0D2-028B-4BB3-9F4D-512A1447443D}.Debug|x64.ActiveCfg = Debug|x64
+		{DC9FA0D2-028B-4BB3-9F4D-512A1447443D}.Debug|x64.Build.0 = Debug|x64
+		{DC9FA0D2-028B-4BB3-9F4D-512A1447443D}.Debug|x86.ActiveCfg = Debug|Win32
+		{DC9FA0D2-028B-4BB3-9F4D-512A1447443D}.Debug|x86.Build.0 = Debug|Win32
+		{DC9FA0D2-028B-4BB3-9F4D-512A1447443D}.Release|x64.ActiveCfg = Release|x64
+		{DC9FA0D2-028B-4BB3-9F4D-512A1447443D}.Release|x64.Build.0 = Release|x64
+		{DC9FA0D2-028B-4BB3-9F4D-512A1447443D}.Release|x86.ActiveCfg = Release|Win32
+		{DC9FA0D2-028B-4BB3-9F4D-512A1447443D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

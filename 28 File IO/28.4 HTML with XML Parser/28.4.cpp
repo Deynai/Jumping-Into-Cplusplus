@@ -1,3 +1,25 @@
+/*
+4. Rewrite your HTML parser so that it uses your XML parser instead of the hand-coded parsing you had
+before. Add support for displaying lists. You should be able to read the <ul> tag or the <nl> tag for
+unordered and numbered lists. Each list item should be between <li> and </li> tags. The display for
+<ul>
+<li>first item</li>
+<li>second item</li>
+</ul>
+Should be
+* first item
+* second item
+And for
+<nl>
+<li>first item</li>
+<li>second item</li>
+</nl>
+Should be
+1. first item
+2. second item
+Make sure that you restart your numbering if a second numbered list appears!
+*/
+
 #include "XMLparser.h"
 
 /*
@@ -7,7 +29,6 @@ this->parse_b();
 this->parse_i();
 this->parse_a();
 */
-
 
 void XML(xmlnode *p_node, xmlparser &xml)
 {

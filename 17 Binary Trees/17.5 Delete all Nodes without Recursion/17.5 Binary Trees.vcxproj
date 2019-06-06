@@ -23,6 +23,7 @@
     <ProjectGuid>{0907A43E-AB73-4793-ACE2-74A6846564C9}</ProjectGuid>
     <RootNamespace>My175BinaryTrees</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <ProjectName>17.5 Delete all Nodes without Recursion</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

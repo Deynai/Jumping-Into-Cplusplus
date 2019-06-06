@@ -1,3 +1,8 @@
+/*
+1. Take your implementation of a vector from the practice problem at the end of chapter 24 and
+add it to a namespace.
+*/
+
 #include "vectorOfInt.h"
 #include <iostream>
 

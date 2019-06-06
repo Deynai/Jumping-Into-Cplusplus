@@ -1,3 +1,11 @@
+/*
+2. Provide another implementation of your sort function, this time taking an interface called
+Comparator, which has a method compare(const string& lhs, const string& rhs)
+that follows similar rules to the previous compare method: return 0 if the two value are the
+same, 1 if lhs > rhs or -1 if lhs < rhs. Write two different classes to do comparison: one
+that does a case-insensitive comparison and one that sorts in reverse alphabetical order.
+*/
+
 #include <iostream>
 #include "Comparator.h"
 #include <vector>

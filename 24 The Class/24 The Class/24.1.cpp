@@ -1,3 +1,11 @@
+/*
+1. Take the structure from the practice problem at the end of the last chapter (representing a tic
+tac toe board) and reimplement it using a class, marking the publicly useful methods as public
+and marking the data and any helper methods as private. How much of your code did you have
+to change?
+*/
+
+
 #include <iostream>
 #include "TicTac.h"
 

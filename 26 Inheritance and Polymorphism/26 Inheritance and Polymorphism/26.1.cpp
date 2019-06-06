@@ -1,3 +1,13 @@
+/*
+1. Implement a sort function that takes a vector of pointers to an interface class, Comparable,
+that defines a method, compare(Comparable& other), and returns 0 if the objects are the
+same, 1 if the object is greater than other, and -1 if the object is less than other. Create a class
+that implements this interface, create several instances, and sort them. If you're looking for
+some inspiration for what to create—try a HighScoreElement class that has a name and a
+score, and sorts so that the top scores are first, but if two scores are the same, they are sorted
+next by name.
+*/
+
 #include <iostream>
 #include <vector>
 #include "Comparable.h"

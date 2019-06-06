@@ -1,3 +1,9 @@
+/*
+1. Reimplement the text file version of the high-score program that inserts into the correct file position,
+but do it using a binary file format instead of a text file format. How can you tell if your program is
+working? Create a program that displays the file as a text file.
+*/
+
 #include <fstream>
 #include <iostream>
 #include <cstdlib>
